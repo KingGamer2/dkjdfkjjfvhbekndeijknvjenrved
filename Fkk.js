@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const fs = require("fs")
 const client = new Discord.Client();
 client.on('ready', () => {
-    console.log(`Fkk Game Started By Friends Team`);
+    console.log(`KingBot Online`);
     client.user.setStatus("dnd")
 });
 let points = JSON.parse(fs.readFileSync('./Data/fkkPTS.json', 'utf8'));
