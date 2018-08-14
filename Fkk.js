@@ -6,7 +6,7 @@ client.on('ready', () => {
     client.user.setStatus("dnd")
 });
 let points = JSON.parse(fs.readFileSync('./Data/fkkPTS.json', 'utf8'));
-const prefix = "/";//البريفكس
+const prefix = "%";//البريفكس
 
 client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
